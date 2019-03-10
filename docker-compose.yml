@@ -22,29 +22,35 @@ services:
   memcached:
     restart: always
     image: memcached:1-alpine
+    mem_limit: 1GB
 
   redis:
     restart: always
     image: redis:5-alpine
+    mem_limit: 1GB
 
   postgres:
     restart: always
     image: postgres:11-alpine
     volumes:
       - sentry-postgres:/var/lib/postgresql/data
+    mem_limit: 1GB
 
   web:
     <<: *defaults
     ports:
       - 9000:9000
+    mem_limit: 500M
 
   cron:
     <<: *defaults
     command: run cron
+    mem_limit: 500M
 
   worker:
     <<: *defaults
     command: run worker
+    mem_limit: 2GB
 
 
 volumes:

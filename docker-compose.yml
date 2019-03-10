@@ -40,7 +40,7 @@ services:
     <<: *defaults
     ports:
       - 9000:9000
-    mem_limit: 500M
+    mem_limit: 1GB
 
   cron:
     <<: *defaults

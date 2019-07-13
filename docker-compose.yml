@@ -45,7 +45,7 @@ services:
   cron:
     <<: *defaults
     command: run cron
-    mem_limit: 1GM
+    mem_limit: 1GB
 
   worker:
     <<: *defaults

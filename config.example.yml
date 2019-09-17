@@ -1,0 +1,7 @@
+github-app.id: GITHUB_APP_ID
+github-app.name: 'GITHUB_APP_NAME'
+github-app.client-id: 'GITHUB_APP_CLIENT_ID'
+github-app.client-secret: 'GITHUB_APP_CLIENT_SECRET'
+github-app.webhook-secret: 'GITHUB_APP_WEBHOOK_SECRET'
+github-app.private-key: |
+        GITHUB_APP_PRIVATE_KEY

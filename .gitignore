@@ -18,3 +18,4 @@ grafana/.env
 # Miscellaneous
 .tmp/
 .github/
+config.yml
